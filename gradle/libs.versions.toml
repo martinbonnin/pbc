@@ -1,0 +1,2 @@
+[libraries]
+routing-compose = "app.softwork:routing-compose:0.2.10"
