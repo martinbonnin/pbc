@@ -1,0 +1,10 @@
+runtime: python39
+
+handlers:
+  - url: /frontend.js
+    static_files: www/frontend.js
+    upload: www/frontend.js
+
+  - url: /(.*)
+    static_files: www/index.html
+    upload: www/index.html
