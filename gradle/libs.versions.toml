@@ -1,2 +1,17 @@
+[versions]
+kotlin = "1.7.20"
+
 [libraries]
 routing-compose = "app.softwork:routing-compose:0.2.10"
+apollo-runtime = { module = "com.apollographql.apollo3:apollo-runtime" }
+google-cloud-datastore = "com.google.cloud:google-cloud-datastore:2.11.0"
+graphql-kotlin-spring-server = "com.expediagroup:graphql-kotlin-spring-server:5.5.0"
+
+[plugins]
+kotlin-allopen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+spring-boot = { id = "org.springframework.boot", version = "2.5.6" }
+appengine = { id = "com.google.cloud.tools.appengine", version = "2.4.5" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+apollo = { id = "com.apollographql.apollo3", version = "3.7.2" }
+compose = { id = "org.jetbrains.compose", version = "1.2.1-rc03" }

@@ -4,6 +4,7 @@ import kotlinx.coroutines.InternalCoroutinesApi
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 import org.jetbrains.compose.web.renderComposable
+import pbc.view.FormView
 import pbc.view.RecipeView
 
 
@@ -13,7 +14,7 @@ fun main() {
         Style(TextStyles)
 
         Div(attrs = { style { padding(16.px) } }) {
-            BrowserRouter(initPath = "/recipes") {
+            BrowserRouter(initPath = "/") {
                 route("/recipes") {
                     Div {
                         A(href = "cannelle") {
@@ -39,6 +40,9 @@ fun main() {
                 }
                 route("/sables") {
                     RecipeView(sables)
+                }
+                route("/") {
+                    FormView()
                 }
             }
         }

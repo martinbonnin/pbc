@@ -1,0 +1,7 @@
+type Mutation {
+    addAddress(address: String!): Boolean!
+}
+
+type Query {
+    addresses: [String!]!
+}
