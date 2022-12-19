@@ -15,7 +15,7 @@ fun main() {
 
         Div(attrs = { style { padding(16.px) } }) {
             BrowserRouter(initPath = "/") {
-                route("/recipes") {
+                route("/", "/recipes") {
                     Div {
                         A(href = "cannelle") {
                             Text("Etoiles à la cannelle")
@@ -40,9 +40,6 @@ fun main() {
                 }
                 route("/sables") {
                     RecipeView(sables)
-                }
-                route("/") {
-                    FormView()
                 }
             }
         }
